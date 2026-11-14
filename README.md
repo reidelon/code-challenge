@@ -1,20 +1,30 @@
 # Code challenges
 
 Classic interview problems solved in Python, without AI help and against the clock.
-Each solution keeps its own test cases, so it runs on its own.
+Each problem has its own folder with every approach I tried, from the first
+one that worked to the optimized one, all checked by the same test cases.
 
 ## Problems
 
-| # | Problem | Pattern | Approach | Time | Space |
-|---|---|---|---|---|---|
-| 1 | [Two Sum](https://leetcode.com/problems/two-sum/) — `two_sum.py` | Arrays & hashing | One pass with a dict | O(n) | O(n) |
+| # | Problem | Pattern | Solutions |
+|---|---|---|---|
+| 1 | [Two Sum](0001-two-sum/) | Arrays & hashing | Brute force O(n²) · One pass with a dict O(n) |
+
+## Layout
+
+```
+NNNN-problem-name/
+├── README.md          # problem statement + table of approaches
+├── <approach>.py      # one file per approach, each exposes the same function
+└── test_<problem>.py  # runs every approach against the same cases
+```
 
 ## Run
 
 Requires Python 3.9+ (no dependencies).
 
 ```bash
-python3 two_sum.py
+python3 0001-two-sum/test_two_sum.py
 ```
 
 Each case prints `OK` or `FAIL` with the result and the expected answer.

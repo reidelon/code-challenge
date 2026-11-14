@@ -1,0 +1,33 @@
+"""Run every Two Sum solution against the same cases.
+
+    python3 0001-two-sum/test_two_sum.py
+"""
+
+import brute_force
+import one_pass
+
+SOLUTIONS = [brute_force, one_pass]
+
+CASES = [
+    ([2, 7, 11, 15], 9, [0, 1]),
+    ([3, 2, 4], 6, [1, 2]),
+    ([3, 3], 6, [0, 1]),
+    ([-1, -2, -3, -4, -5], -8, [2, 4]),
+    # edge cases
+    ([0, 4, 3, 0], 0, [0, 3]),        # duplicate zeros, far apart
+    ([1, 5, 5], 10, [1, 2]),          # duplicates at the end
+    ([5, 1, 5], 10, [0, 2]),          # duplicates apart
+    ([-3, 4, 3, 90], 0, [0, 2]),      # negative + positive
+    ([1, 2, 3, 4, 5], 9, [3, 4]),     # pair at the end
+    ([15, 11, 7, 2], 9, [2, 3]),      # unsorted
+    ([1000000000, 2, 1000000000], 2000000000, [0, 2]),  # large numbers
+]
+
+
+if __name__ == "__main__":
+    for solution in SOLUTIONS:
+        print(f"== {solution.__name__}")
+        for nums, target, expected in CASES:
+            result = solution.two_sum(nums, target)
+            ok = result is not None and sorted(result) == sorted(expected)
+            print("OK  " if ok else "FAIL", nums, target, "->", result, "(expected", expected, ")")
