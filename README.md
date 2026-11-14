@@ -7,7 +7,7 @@ Each solution keeps its own test cases, so it runs on its own.
 
 | # | Problem | Pattern | Approach | Time | Space |
 |---|---|---|---|---|---|
-| 1 | [Two Sum](https://leetcode.com/problems/two-sum/) — `two_sum.py` | Arrays & hashing | Brute force: every pair of indices | O(n²) | O(1) |
+| 1 | [Two Sum](https://leetcode.com/problems/two-sum/) — `two_sum.py` | Arrays & hashing | One pass with a dict | O(n) | O(n) |
 
 ## Run
 
