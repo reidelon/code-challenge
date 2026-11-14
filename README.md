@@ -9,6 +9,7 @@ one that worked to the optimized one, all checked by the same test cases.
 | # | Problem | Pattern | Solutions |
 |---|---|---|---|
 | 1 | [Two Sum](0001-two-sum/) | Arrays & hashing | Brute force O(n²) · One pass with a dict O(n) |
+| 217 | [Contains Duplicate](0217-contains-duplicate/) | Arrays & hashing | Set length O(n) · One pass with early exit O(n) |
 
 ## Layout
 
