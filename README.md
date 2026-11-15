@@ -3,6 +3,8 @@
 Classic interview problems solved in Python, without AI help and against the clock.
 Each problem has its own folder with every approach I tried, from the first
 one that worked to the optimized one, all checked by the same test cases.
+Problems with no LeetCode number (`—`) are ones I was given in live-coding
+interviews, redone calmly afterwards.
 
 ## Problems
 
@@ -10,6 +12,8 @@ one that worked to the optimized one, all checked by the same test cases.
 |---|---|---|---|
 | 1 | [Two Sum](0001-two-sum/) | Arrays & hashing | Brute force O(n²) · One pass with a dict O(n) |
 | 217 | [Contains Duplicate](0217-contains-duplicate/) | Arrays & hashing | Set length O(n) · One pass with early exit O(n) |
+| 242 | [Valid Anagram](0242-valid-anagram/) | Arrays & hashing | Counter O(n) · Sort O(n log n) · Set + count O(k·n) · Dict count O(n) |
+| — | [Print a 2D array in zigzag](zigzag-matrix/) | Matrices / traversal | Rows with `[::-1]` on odd indexes O(R×C) |
 
 ## Layout
 
