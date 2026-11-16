@@ -13,6 +13,7 @@ interviews, redone calmly afterwards.
 | 1 | [Two Sum](0001-two-sum/) | Arrays & hashing | Brute force O(n²) · One pass with a dict O(n) |
 | 217 | [Contains Duplicate](0217-contains-duplicate/) | Arrays & hashing | Set length O(n) · One pass with early exit O(n) |
 | 242 | [Valid Anagram](0242-valid-anagram/) | Arrays & hashing | Counter O(n) · Sort O(n log n) · Set + count O(k·n) · Dict count O(n) |
+| 383 | [Ransom Note](0383-ransom-note/) | Arrays & hashing | Counter with early exit O(n + m) |
 | — | [Print a 2D array in zigzag](zigzag-matrix/) | Matrices / traversal | Rows with `[::-1]` on odd indexes O(R×C) |
 
 ## Layout
